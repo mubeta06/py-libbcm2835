@@ -38,7 +38,7 @@ def main():
     # Send a byte to the slave and simultaneously read a byte back from the slave
     # If you tie MISO to MOSI, you should read back what was sent
     data = bcm2835_spi_transfer(0x23);
-    print "Read from SPI: %02X\n" % data
+    print("Read from SPI: %02X" % data)
 
     bcm2835_spi_end()
     bcm2835_close()
